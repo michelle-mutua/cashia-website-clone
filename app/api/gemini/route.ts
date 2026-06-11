@@ -6,7 +6,7 @@ import path from "path";
 function getGoogleApiKey(): string | undefined {
   return (
     process.env.GOOGLE_GENERATIVE_AI_API_KEY ??
-    process.env["GOOGLE-GENERATIVE-API-KEY"]
+    process.env["GOOGLE_GENERATIVE_API_KEY"]
   );
 }
 
