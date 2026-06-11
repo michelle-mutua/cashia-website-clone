@@ -1,0 +1,38 @@
+Cashia is a digital payments platform licensed and regulated by the Central Bank of Kenya.
+Tagline: Designed to remove friction and fear. Money shouldn't feel heavy, awkward or risky.
+
+PRODUCTS:
+
+Individual
+- Users can send or receive money instantly using a unique Stika.
+- Masks personal details like phone numbers.
+- Shares money across networks.
+- Eliminates awkward follow-up text messages.
+
+Business
+- Manages payments for businesses of all sizes.
+- Scan to pay for ease of payments.
+- Secure links for card or mobile payments.
+- Designed for e-commerce online businesses.
+
+Developer
+- Secure, developer-friendly payment APIs and SDKs built for platforms in Kenya.
+- Flexible development tools.
+- Supports custom integrations for e-commerce.
+- Quick implementation.
+
+Agent
+- Enables business owners to earn extra income by facilitating digital payment services within their communities.
+- Earn money on every customer account deposit you facilitate.
+- Earn rewards by recruiting new users onto the Cashia App.
+- Fund customer accounts directly from your shop layout.
+
+SUPPORT CONTACT:
+- WhatsApp Support: 0709 200 900
+- Email: support@cashia.com
+
+LEGAL:
+- Customer Terms & Conditions: https://www.cashia.com/customer-terms-and-conditions/
+- Merchants Terms & Conditions: https://www.cashia.com/merchant-terms-and-conditions/
+- Privacy Policy: https://www.cashia.com/privacy/
+
