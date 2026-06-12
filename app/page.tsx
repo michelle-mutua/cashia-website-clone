@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
 
+
 export default function Home() {
 
 
@@ -56,7 +57,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8">
 
-            <div className="p-6 border border-cashia-pink rounded-2xl bg-slate-50">
+            <div className="p-6 border border-cashia-pink rounded-2xl bg-cashia-white">
               <h4 className="text-xl font-bold mb-2 text-cashia-red">Individual</h4>
               <p className="text-cashia-dark-gray text-sm mb-4">Users can send or receive money instantly using a unique, Stika.</p>
               <ul className="text-xs text-cashia-mid-gray space-y-1 list-disc list-inside">
@@ -67,7 +68,7 @@ export default function Home() {
             </div>
 
 
-            <div className="p-6 border border-cashia-pink rounded-2xl bg-slate-50">
+            <div className="p-6 border border-cashia-pink rounded-2xl bg-cashia-white">
               <h4 className="text-xl font-bold mb-2 text-cashia-red"> Business</h4>
               <p className="text-cashia-dark-gray text-sm mb-4">Manages payments for businesses of all sizes.</p>
               <ul className="text-xs text-cashia-mid-gray space-y-1 list-disc list-inside">
@@ -77,7 +78,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="p-6 border border-cashia-pink rounded-2xl bg-slate-50">
+            <div className="p-6 border border-cashia-pink rounded-2xl bg-cashia-white">
               <h4 className="text-xl font-bold mb-2 text-cashia-red">Developer</h4>
               <p className="text-cashia-dark-gray text-sm mb-4">Offers secure, developer-friendly payment APIs and SDKs built for platforms in Kenya.</p>
               <ul className="text-xs text-cashia-mid-gray space-y-1 list-disc list-inside">
@@ -88,7 +89,7 @@ export default function Home() {
             </div>
 
 
-            <div className="p-6 border border-cashia-pink rounded-2xl bg-slate-50">
+            <div className="p-6 border border-cashia-pink rounded-2xl bg-cashia-white">
               <h4 className="text-xl font-bold mb-2 text-cashia-red">Agent</h4>
               <p className="text-cashia-dark-gray text-sm mb-4">Enables business owners to earn extra income by facilitating digital payment services within their communities.</p>
               <ul className="text-xs text-cashia-mid-gray space-y-1 list-disc list-inside">

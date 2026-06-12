@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+
+
+:root {
+  --color-cashia-white: #ffffff;
+  --color-cashia-black: #0b0f19;
+  --color-cashia-dark-gray: #4b5563;
+}
+
+
 :root {
   --background: #F8F9FA; /* Default to Cashia Off-White */
   --foreground: #121212; /* Default to Cashia Dusk Black */
