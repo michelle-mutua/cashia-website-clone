@@ -42,7 +42,9 @@ export async function POST(req: Request) {
       console.error("Missing data/cashia-context.txt");
       cashiaContext =
         "Cashia is a digital payments platform in Kenya. For support contact support@cashia.com or WhatsApp 0709 200 900.";
-    }
+    } 
+
+    
 
     const google = createGoogleGenerativeAI({ apiKey });
 

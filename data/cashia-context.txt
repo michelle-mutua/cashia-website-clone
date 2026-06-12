@@ -36,3 +36,8 @@ LEGAL:
 - Merchants Terms & Conditions: https://www.cashia.com/merchant-terms-and-conditions/
 - Privacy Policy: https://www.cashia.com/privacy/
 
+PRICING:
+-Payments:https://www.cashia.com/pricing/
+
+ABOUT:
+-About Us:https://www.cashia.com/about/
