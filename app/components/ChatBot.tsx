@@ -173,7 +173,7 @@ export default function ChatBot() {
       {/* FLOATING BUTTON */}
       <button
         onClick={() => setOpen(!open)}
-        className={`${open ? 'hidden md:flex' : 'flex'} bg-none p-0 shadow-xl items-center justify-center hover:scale-105 active:scale-95 transition-all`}
+        className={`${open ? 'hidden md:flex' : 'flex'} bg-none p-0  items-center justify-center hover:scale-105 active:scale-95 transition-all`}
       >
         <Image
           src="/Rectangle.svg"

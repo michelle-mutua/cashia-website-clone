@@ -50,6 +50,12 @@ export async function POST(req: Request) {
 
     const result = await generateText({
       model: google("gemini-2.5-flash"),
+
+      tools: {
+        google_search: google.tools.googleSearch({}),
+      },
+      
+
       system: `You are Mila, Cashia's friendly customer support AI assistant.
 
 Rules:
