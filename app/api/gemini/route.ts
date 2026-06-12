@@ -49,7 +49,7 @@ export async function POST(req: Request) {
     const google = createGoogleGenerativeAI({ apiKey });
 
     const result = await generateText({
-      model: google("gemini-2.5-flash,{ useSearchGrounding: true }"),
+      model: google("gemini-2.5-flash,"),
 
       
 
