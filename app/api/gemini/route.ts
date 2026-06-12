@@ -49,11 +49,8 @@ export async function POST(req: Request) {
     const google = createGoogleGenerativeAI({ apiKey });
 
     const result = await generateText({
-      model: google("gemini-2.5-flash"),
+      model: google("gemini-2.5-flash,{ useSearchGrounding: true }"),
 
-      tools: {
-        google_search: google.tools.googleSearch({}),
-      },
       
 
       system: `You are Mila, Cashia's friendly customer support AI assistant.
