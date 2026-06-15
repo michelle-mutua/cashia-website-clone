@@ -48,7 +48,7 @@ export async function POST(req: Request) {
 
     const result = await generateText({
         model: google("gemini-2.5-flash"),
-        
+
         tools: {googleSearch: google.tools.googleSearch({}),
      },
 
