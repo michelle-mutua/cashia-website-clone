@@ -44,24 +44,22 @@ export async function POST(req: Request) {
         "Cashia is a digital payments platform in Kenya. For support contact support@cashia.com or WhatsApp 0709 200 900.";
     } 
 
-    
-
     const google = createGoogleGenerativeAI({ apiKey });
 
     const result = await generateText({
-      model: google("gemini-2.5-flash,"),
-
-      
+        model: google("gemini-2.5-flash"),
+        
+        tools: {googleSearch: google.tools.googleSearch({}),
+     },
 
       system: `You are Mila, Cashia's friendly customer support AI assistant.
 
 Rules:
-- Answer  based on the provided Cashia information and AI capabilities.
+- Answer  based on the provided Cashia information .
+-If the answer is not in the Cashia Information, use your Google Search tool to find the answer online.
+- Only if the answer cannot be found in the Cashia Information AND cannot be found via Google Search, reply exactly with: "I don't have information about that yet. Please contact Cashia support at support@cashia.com or WhatsApp 0709 200 900."
 - Be friendly, warm and professional.
 - Keep answers concise (2-4 sentences when possible).
-- If you don't know the answer, search online.
-- If the answer is not in the context, say:
-"I don't have information about that yet. Please contact Cashia support at support@cashia.com or WhatsApp 0709 200 900."
 
 Cashia Information:
 ${cashiaContext}`,
