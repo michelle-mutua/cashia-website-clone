@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CashiaDashboard() {
   return (
-    <div className="flex min-h-screen w-full bg-gradient-to-tr from-cashia-white via-cashia-white to-cashia-lpink text-cashia-dark-gray antialiased font-sans">
+    <div className="flex min-h-screen w-full bg-cashia-white md:bg-gradient-to-tr from-cashia-white via-cashia-white to-cashia-lpink text-cashia-dark-gray antialiased font-sans">
       
       {/* SIDEBAR */}
       <aside className="w-64 flex-shrink-0 px-8 py-10 flex flex-col gap-y-10">
@@ -11,7 +11,7 @@ export default function CashiaDashboard() {
           <div className="w-7 h-7 rounded-full  flex items-center justify-center text-cashia-white font-bold text-base shadow-sm">
             <Image src="/Vector.svg" alt="" width={30} height={30} />
           </div>
-          <span className="text-2xl font-black tracking-tight text-cashia-red">Cashia</span>
+          <span className="text-2xl font-bold tracking-tight text-cashia-red">Cashia</span>
         </div>
 
         <nav className="flex flex-col gap-y-3">
@@ -33,18 +33,36 @@ export default function CashiaDashboard() {
       {/* MAIN CONTENT WINDOW */}
       <main className="flex-1 px-14 py-10 max-w-7xl">
         
-        <header className="flex justify-end items-center mb-8">
+        <header className="flex justify-end items-center  mb-8">
           <button className="flex items-center gap-2.5 text-cashia-black  font-Akkurat text-sm transition">
-            <div className="w-9 h-9 rounded-full bg-cashia-white flex items-center justify-center ">
+            <div className="w-9 h-9 rounded-full bg-cashia-light-gray md:bg-cashia-white flex items-center justify-center ">
               <Image src="/user.svg" alt="" width={20} height={20} />
             
             </div>
-            Account
+           <span className="hidden md:inline">Account</span>
           </button>
         </header>
 
+       {/* Mobile top  */}
+      <div className="flex items-center gap-3.5 mb-8 md:hidden">
+  
+     <div className="w-12 h-12 rounded-full overflow-hidden relative bg-cashia-light-gray flex-shrink-0">
+      <Image 
+      src="/image.svg" 
+      alt="Reuben" 
+      width={48} 
+      height={48} 
+      className="object-cover"
+    />
+    </div>
+
+
+  <span className="text-xl font-medium font-Akkurat text-cashia-black tracking-tight">
+    Hello, Reuben!
+  </span>
+</div>
         {/* Status Notice */}
-        <div className="bg-cashia-light-gray border-cashia-white rounded-xl p-4 flex items-start gap-4 mb-10 max-w-4xl">
+        <div className="bg-cashia-light-gray border-cashia-white rounded-xl p-4 flex items-start gap-4 mb-10 max-w-4xl  ">
           <div className="p-2 bg-[url('/star.svg')] />">
             <Image src="/gift.svg" alt="" width={20} height={20} />
             </div>
