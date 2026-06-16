@@ -35,6 +35,7 @@
   /* Custom Tailwind v4 Fonts */
   --font-inter: "Inter", sans-serif;
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-akkurat: "Akkurat_LL_Cyrillic", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
