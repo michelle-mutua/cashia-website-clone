@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+import Link from "next/link";
 
 
 export default function Home() {
@@ -41,9 +42,14 @@ export default function Home() {
             Get Started
           </button>
 
-            <button id="register" className="bg-cashia-red text-cashia-white font-medium px-8 py-3 rounded-xl text-lg hover:bg-cashia-white hover:text-cashia-red hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition">
-              Register
-            </button></div>
+            <Link
+            href="/login"
+            className="bg-cashia-red text-cashia-white font-medium px-8 py-3 rounded-xl text-lg hover:bg-cashia-white hover:text-cashia-red hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition"
+            >
+           Log in
+           </Link>
+           
+            </div>
 
         </div>
       </header>

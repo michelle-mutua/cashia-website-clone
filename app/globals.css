@@ -23,8 +23,11 @@
   --color-cashia-orange: #FB8C00;
   --color-cashia-purple: #5E35B1;
   --color-cashia-pink: #FDB5C6;
+   --color-cashia-lpink: #ffe4eb;
   --color-cashia-mid-gray: #808080;
   --color-cashia-dark-gray: #45556c;
+  --color-cashia-blue: #62748e;
+  --color-cashia-light-gray:#F5F5F5;
   /* Native System Mapping */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
