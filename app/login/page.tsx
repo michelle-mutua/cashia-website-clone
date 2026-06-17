@@ -11,7 +11,7 @@ export default function CashiaDashboard() {
    <div className="min-h-screen bg-cashia-white md:bg-gradient-to-tr from-cashia-white via-cashia-white to-cashia-lpink">
 
  {/* HEADER*/}
-   <nav className="p-5 flex justify-between direction-row items-center bg-cashia-white sticky top-0 z-50">
+   <nav className="p-5 flex justify-between direction-row items-center  bg-cashia-white md:bg-gradient-to-br from-cashia-white via-cashia-white to-cashia-lpink sticky top-0 z-50">
       
          <div 
             onClick={() => router.back()} 
@@ -127,8 +127,8 @@ export default function CashiaDashboard() {
         </section>
 
         {/* Active Betika Transaction Prompt */}
-        <section className="hidden md:flex mb-12 max-w-xl">
-          <div className="bg-cashia-white border border-cashia-light-gray rounded-[28px] p-8  shadow-2xs flex items-center justify-between">
+        <section className="hidden md:flex mb-14 max-w-xl">
+          <div className="bg-cashia-white border border-cashia-light-gray rounded-[28px] p-7  shadow-2xs flex items-center justify-between">
             <div className="flex items-center gap-4">
 
               <div className="flex items-center gap-3"> 
