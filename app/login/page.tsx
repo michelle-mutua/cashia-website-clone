@@ -1,39 +1,29 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 
 export default function CashiaDashboard() {
+  const router = useRouter();
   return (
-    <div className="flex min-h-screen w-full bg-cashia-white md:bg-gradient-to-tr from-cashia-white via-cashia-white to-cashia-lpink text-cashia-dark-gray antialiased font-sans">
+    
+   <div className="min-h-screen bg-cashia-white md:bg-gradient-to-tr from-cashia-white via-cashia-white to-cashia-lpink">
+
+ {/* HEADER*/}
+   <nav className="p-5 flex justify-between direction-row items-center bg-cashia-white sticky top-0 z-50">
       
-      {/* SIDEBAR */}
-      <aside className="w-64 flex-shrink-0 px-8 py-10 flex flex-col gap-y-10">
-        <div className="flex items-center gap-2.5 px-2">
-          <div className="w-7 h-7 rounded-full  flex items-center justify-center text-cashia-white font-bold text-base shadow-sm">
-            <Image src="/Vector.svg" alt="" width={30} height={30} />
-          </div>
-          <span className="text-2xl font-bold tracking-tight text-cashia-red">Cashia</span>
+         <div 
+            onClick={() => router.back()} 
+            className="flex items-center gap-2.5 px-2 cursor-pointer hover:opacity-80 transition"
+           >
+         <div className="w-7 h-7 rounded-full flex items-center justify-center text-cashia-white font-bold text-base shadow-sm">
+         <Image src="/Vector.svg" alt="Logo" width={30} height={30} />
+         </div>
+    
+         <span className="text-2xl font-bold tracking-tight text-cashia-red ">Cashia</span>
         </div>
 
-        <nav className="flex flex-col gap-y-3">
-          <a href="#" className="flex items-center gap-3.5 px-6 py-3.5 bg-cashia-black text-cashia-white rounded-full font-normal font-Akkurat text-sm shadow-sm">
-            <Image src="/home.svg" alt="" width={20} height={20} />
-            Home
-          </a>
-          <a href="#" className="flex items-center gap-3.5 px-6 py-3.5 text-cashia-black bg-cashia-light-gray  rounded-full font-Akkurat text-sm transition-all">
-            <Image src="/bill.svg" alt="" width={20} height={20} />
-            Bills
-          </a>
-          <a href="#" className="flex items-center gap-3.5 px-6 py-3.5 text-cashia-black bg-cashia-light-gray  rounded-full font-Akkurat text-sm transition-all">
-            <Image src="/chart.svg" alt="" width={20} height={20} />
-            Analytics
-          </a>
-        </nav>
-      </aside>
-
-      {/* MAIN CONTENT WINDOW */}
-      <main className="flex-1 px-14 py-10 max-w-7xl">
-        
-        <header className="flex justify-end items-center  mb-8">
           <button className="flex items-center gap-2.5 text-cashia-black  font-Akkurat text-sm transition">
             <div className="w-9 h-9 rounded-full bg-cashia-light-gray md:bg-cashia-white flex items-center justify-center ">
               <Image src="/user.svg" alt="" width={20} height={20} />
@@ -41,8 +31,39 @@ export default function CashiaDashboard() {
             </div>
            <span className="hidden md:inline">Account</span>
           </button>
-        </header>
+        
+          </nav>
+        
+         {/* SIDEBAR */}
+<div className="flex">
+   
+<aside className="hidden md:flex w-[220px] flex-col px-10 py-10">
 
+  <nav className="flex-1 flex flex-col  gap-y-3 ">
+    <a href="#" className="flex items-center gap-3.5 px-6 py-3.5 bg-cashia-black text-cashia-white rounded-full font-normal font-Akkurat text-sm shadow-sm">
+      <Image src="/home.svg" alt="" width={20} height={20} />
+      Home
+    </a>
+    <a href="#" className="flex items-center gap-3.5 px-6 py-3.5 text-cashia-black bg-cashia-light-gray rounded-full font-Akkurat text-sm transition-all">
+      <Image src="/bill.svg" alt="" width={20} height={20} />
+      Bills
+    </a>
+    <a href="#" className="flex items-center gap-3.5 px-6 py-3.5 text-cashia-black bg-cashia-light-gray rounded-full font-Akkurat text-sm transition-all">
+      <Image src="/chart.svg" alt="" width={20} height={20} />
+      Analytics
+    </a>
+  </nav>
+
+  <div className="h-10 invisible" />
+</aside>
+
+
+
+
+      {/* Hello*/}
+      <main className="flex-1 px-10 py-10">
+        
+        
        {/* Mobile top  */}
       <div className="flex items-center gap-3.5 mb-8 md:hidden">
   
@@ -57,13 +78,15 @@ export default function CashiaDashboard() {
     </div>
 
 
-  <span className="text-xl font-medium font-Akkurat text-cashia-black tracking-tight">
+    <span className="text-xl font-medium font-Akkurat text-cashia-black tracking-tight">
     Hello, Reuben!
-  </span>
-</div>
-        {/* Status Notice */}
-        <div className="bg-cashia-light-gray border-cashia-white rounded-xl p-4 flex items-start gap-4 mb-10 max-w-4xl  ">
-          <div className="p-2 bg-[url('/star.svg')] />">
+    </span>
+    </div>
+
+      {/* MAIN CONTENT WINDOW */}
+       <div>
+       <div className="bg-cashia-light-gray rounded-xl p-4 flex items-start gap-4 mb-10 w-full hidden ">
+         <div className="p-2 bg-[url('/star.svg')] />">
             <Image src="/gift.svg" alt="" width={20} height={20} />
             </div>
 
@@ -76,9 +99,9 @@ export default function CashiaDashboard() {
         {/* Balance Section */}
         <section className="mb-10">
           <div className="flex flex-col gap-y-0.5 ">
-          <span className="text-xs font-Akkurat  text-cashia-black tracking-wide">Your Balance</span>
+          <span className="text-xs font-Akkurat  text-cashia-black tracking-wide ">Your Balance</span>
           <div className="flex items-center gap-3.5  mb-6">
-            <h1 className="text-5xl font-Akkurat tracking-tight text-cashia-black">KES 100.00</h1>
+            <h1 className="text-[64px] leading-none  font-Akkurat  text-cashia-black">KES 100.00</h1>
             <button className="text-slate-400 hover:text-slate-600 transition self-center mt-1">
               <Image  src="/eye-slash.svg" alt="" width={20} height={20} />
             </button>
@@ -104,8 +127,8 @@ export default function CashiaDashboard() {
         </section>
 
         {/* Active Betika Transaction Prompt */}
-        <section className="mb-12 max-w-xl">
-          <div className="bg-cashia-white border border-cashia-light-gray rounded-[28px] p-6 shadow-2xs flex items-center justify-between">
+        <section className="hidden md:flex mb-12 max-w-xl">
+          <div className="bg-cashia-white border border-cashia-light-gray rounded-[28px] p-8  shadow-2xs flex items-center justify-between">
             <div className="flex items-center gap-4">
 
               <div className="flex items-center gap-3"> 
@@ -134,7 +157,6 @@ export default function CashiaDashboard() {
   
         </section>
 
- {/* START */}
 
 
         {/* Empty History Indicator */}
@@ -153,9 +175,8 @@ export default function CashiaDashboard() {
         </section>
 
         {/* App Utility Promo Ad Banner */}
-        <section className="max-w-4xl  bg-[url('/bg-bottom.png')] border border-cashia-white rounded-[32px] p-10 relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between gap-6 ">
-       <div className="z-10 p-5 border border-cashia-white/10 bg-cashia-white/20 backdrop-blur-xl rounded-[10px] shadow-lg">
-              <h2 className="text-3xl font-bold text-cashia-black font-akkurat tracking-tight">Get the Cashia App</h2>
+        <section className="hidden md:flex w-full bg-auto md:bg-[url('/bg-bottom.png')] border border-cashia-white rounded-[32px] p-10 relative overflow-hidden items-center justify-between gap-6"><div className="z-10 w-full md:w-auto p-4 md:p-5 border border-cashia-white/10 bg-cashia-white/20 backdrop-blur-xl rounded-xl shadow-lg">    
+         <h2 className="text-3xl font-bold text-cashia-black font-akkurat tracking-tight">Get the Cashia App</h2>
             <p className="text-cashia-black text-l mt-1.5 mb-6 font-Akkurat">Instant transfers, lower fees, <br />better experience</p>
             
             <div className="flex flex-wrap gap-3">
@@ -169,8 +190,9 @@ export default function CashiaDashboard() {
          
          
         </section>
-
+       </div>
       </main>
+      </div>
     </div>
   );
 }

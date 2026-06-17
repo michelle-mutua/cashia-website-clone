@@ -38,13 +38,14 @@ export default function Home() {
             Money shouldn't feel heavy, awkward or risky.
           </p>
           <div className="flex flex-col md:flex-row gap-6 flex-wrap">
-          <button id="get-started" className="bg-cashia-red text-cashia-white  font-medium px-8 py-3 rounded-xl text-lg hover:bg-cashia-white hover:text-cashia-red  hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition">
+          <button id="get-started" 
+          className="flex items-center justify-center bg-cashia-red text-cashia-white  font-medium px-8 py-3 rounded-xl text-lg hover:bg-cashia-white hover:text-cashia-red  hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition">
             Get Started
           </button>
 
             <Link
             href="/login"
-            className="bg-cashia-red text-cashia-white font-medium px-8 py-3 rounded-xl text-lg hover:bg-cashia-white hover:text-cashia-red hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition"
+            className="flex items-center justify-center bg-cashia-red text-cashia-white font-medium px-8 py-3 rounded-xl text-lg hover:bg-cashia-white hover:text-cashia-red hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition"
             >
            Log in
            </Link>
