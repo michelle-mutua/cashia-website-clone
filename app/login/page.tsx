@@ -69,7 +69,7 @@ export default function CashiaDashboard() {
   
      <div className="w-12 h-12 rounded-full overflow-hidden relative bg-cashia-light-gray flex-shrink-0">
       <Image 
-      src="/image.svg" 
+      src="/Image.svg" 
       alt="Reuben" 
       width={48} 
       height={48} 
