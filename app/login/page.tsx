@@ -8,11 +8,12 @@ export default function CashiaDashboard() {
   const router = useRouter();
   return (
     
-   <div className="min-h-screen bg-cashia-white md:bg-gradient-to-tr from-cashia-white via-cashia-white to-cashia-lpink">
+   <div className="min-h-screen bg-white relative overflow-hidden">
+     <div className="absolute top-0 right-0 w-80 h-80 bg-cashia-white md:bg-cashia-lpink rounded-full blur-3xl opacity-40 pointer-events-none"></div>
 
  {/* HEADER*/}
-   <nav className="p-5 flex justify-between direction-row items-center  bg-cashia-white md:bg-gradient-to-br from-cashia-white via-cashia-white to-cashia-lpink sticky top-0 z-50">
-      
+   <nav className="p-5 flex justify-between items-center bg-transparent sticky top-0 z-50">
+
          <div 
             onClick={() => router.back()} 
             className="flex items-center gap-2.5 px-2 cursor-pointer hover:opacity-80 transition"
@@ -99,11 +100,11 @@ export default function CashiaDashboard() {
         {/* Balance Section */}
         <section className="mb-10">
           <div className="flex flex-col items-center  md:items-start gap-y-0.5  ">
-          <span className="text-xs font-Akkurat  text-cashia-black tracking-wide  ">Your Balance</span>
+          <span className="text-sm md:text-lg font-Akkurat  text-cashia-black tracking-wide  ">Your Balance</span>
           <div className="flex items-center gap-3.5  mb-6">
-            <h1 className="  leading-none  font-Akkurat  text-cashia-black">
-              <span className="text-[20px] md:text-[34px]">KES</span> 
-              <span className="text-[40px] md:text-[64px]">100.00</span>
+            <h1 className="  leading-none font-bold font-Akkurat  text-cashia-black">
+              <span className="text-xl md:text-5xl">KES</span> 
+              <span className="text-3xl md:text-5xl">100.00</span>
               </h1>
 
             <button className="text-slate-400 hover:text-slate-600 transition self-center mt-1">
@@ -112,27 +113,39 @@ export default function CashiaDashboard() {
           </div>
           </div>
 
-          <div className="flex flex-wrap gap-3.5">
-            <button className="flex items-center gap-2 bg-cashia-red  text-white font-Akkurat text-sm px-7 py-2.5 rounded-full  ">
-               <Image  src="/add.svg" alt="" width={18} height={18} />
-              Deposit
-            </button>
+          <div className="flex flex-wrap gap-10">
 
+            <div className="flex flex-col items-center">
+            <button className="flex items-center gap-2 bg-cashia-red  text-white font-Akkurat text-sm px-7 py-2.5 rounded-full   ">
+               <Image  src="/add.svg" alt="" width={18} height={18} />
+              <span className="hidden md:inline">Deposit</span>
+            </button>
+            <span className="md:hidden mt-2 text-sm font-medium font-Akkurat text-cashia-black">
+            Deposit
+            </span>
+            </div>
+
+               
             <button className="hidden md:flex items-center  gap-2 bg-white hover:bg-cashia-light-gray text-cashia-black border border-cashia-light-gray font-bold font-Akkurat text-sm px-7 py-2.5 rounded-full ">
                <Image  src="/arrow-down.svg" alt="" width={18} height={18} />
               Withdraw
             </button>
-
+            
+            <div className="flex flex-col items-center">
             <button className="flex items-center gap-2 bg-white hover:bg-cashia-light-gray text-cashia-black border border-cashia-light-gray font-bold font-Akkurat text-sm px-7 py-2.5 rounded-full t">
                <Image  src="/more.svg" alt="" width={18} height={18} />
-              Do more
+               <span className="hidden md:inline">Do more</span>
             </button>
+             <span className="md:hidden mt-2 text-bold  font-medium font-Akkurat text-cashia-black">
+            Do more
+            </span>
+            </div>
           </div>
         </section>
 
         {/* Active Betika Transaction Prompt */}
         <section className="hidden md:flex mb-14 max-w-xl">
-          <div className="bg-cashia-white border border-cashia-light-gray rounded-[28px] p-7  shadow-2xs flex items-center justify-between">
+          <div className="bg-cashia-white border border-cashia-light-gray rounded-[28px] p-7  shadow-2xs flex items-center justify-between gap-12">
             <div className="flex items-center gap-4">
 
               <div className="flex items-center gap-3"> 
@@ -148,14 +161,16 @@ export default function CashiaDashboard() {
               </div>
               <div>
                 <span className="text-xs font-Akkurat text-cashia-mid-gray block mb-0.5">Payment Request</span>
-                <h3 className="font-bold font-Akkurat text-cashia-black text-sm tracking-tight">Betika: +254 753 777 888</h3>
-                <h2 className="text-lg font-bold font-Akkurat text-cashia-black mt-0.5">KES 200.00</h2>
-                <span className="text-[11px]  font-Akkurat text-cashia-orange block mt-1">Expires in 20 minutes</span>
+                <h3 className="font-bold font-Akkurat text-cashia-black text-base tracking-tight">Betika: +254 753 777 888</h3>
+                <h2 className="text-2xl font-bold font-Akkurat text-cashia-black mt-0.5">KES 200.00</h2>
+                <span className="text-[10px] font-normal font-Akkurat text-cashia-orange block mt-1">Expires in 20 minutes</span>
               </div>
             </div>
+            <div>
             <button className="bg-cashia-red text-cashia-white font-bold text-sm px-6 py-2.5 rounded-full transition shadow-sm">
               View
             </button>
+            </div>
           </div>
 
   
