@@ -85,7 +85,7 @@ export default function CashiaDashboard() {
 
       {/* MAIN CONTENT WINDOW */}
        <div>
-       <div className="bg-cashia-light-gray rounded-xl p-4 flex items-start gap-4 mb-10 w-full hidden ">
+       <div className="bg-cashia-light-gray rounded-xl p-4 hidden md:flex items-start gap-4 mb-10 w-full  ">
          <div className="p-2 bg-[url('/star.svg')] />">
             <Image src="/gift.svg" alt="" width={20} height={20} />
             </div>
@@ -98,10 +98,14 @@ export default function CashiaDashboard() {
 
         {/* Balance Section */}
         <section className="mb-10">
-          <div className="flex flex-col gap-y-0.5 ">
-          <span className="text-xs font-Akkurat  text-cashia-black tracking-wide ">Your Balance</span>
+          <div className="flex flex-col items-center  md:items-start gap-y-0.5  ">
+          <span className="text-xs font-Akkurat  text-cashia-black tracking-wide  ">Your Balance</span>
           <div className="flex items-center gap-3.5  mb-6">
-            <h1 className="text-[64px] leading-none  font-Akkurat  text-cashia-black">KES 100.00</h1>
+            <h1 className="  leading-none  font-Akkurat  text-cashia-black">
+              <span className="text-[20px] md:text-[34px]">KES</span> 
+              <span className="text-[40px] md:text-[64px]">100.00</span>
+              </h1>
+
             <button className="text-slate-400 hover:text-slate-600 transition self-center mt-1">
               <Image  src="/eye-slash.svg" alt="" width={20} height={20} />
             </button>
@@ -114,7 +118,7 @@ export default function CashiaDashboard() {
               Deposit
             </button>
 
-            <button className="flex items-center gap-2 bg-white hover:bg-cashia-light-gray text-cashia-black border border-cashia-light-gray font-bold font-Akkurat text-sm px-7 py-2.5 rounded-full ">
+            <button className="hidden md:flex items-center  gap-2 bg-white hover:bg-cashia-light-gray text-cashia-black border border-cashia-light-gray font-bold font-Akkurat text-sm px-7 py-2.5 rounded-full ">
                <Image  src="/arrow-down.svg" alt="" width={18} height={18} />
               Withdraw
             </button>
