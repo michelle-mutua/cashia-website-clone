@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <div className="bg-cashia-white min-h-screen text-cashia-black font-inter">
 
-      <nav className="p-5 flex justify-between items-center bg-cashia-white shadow-sm sticky top-0 z-50">
-        <h1 className="flex items-center gap-2 font-bold text-xl text-cashia-red">
+      <nav className="p-5 flex justify-between items-center bg-cashia-white shadow-2xs sticky top-0 z-50">
+        <h1 className="flex items-center gap-2 font-bold text-2xl text-cashia-red ">
 
           <Image src="/Vector.svg" alt="" width={30} height={30} />
 
-          <span>CASHIA</span>
+          <span>Cashia</span>
         </h1>
 
         <a href="#footer" className="bg-cashia-red text-cashia-white font-medium text-md px-4 py-2 rounded-lg hover:bg-cashia-white hover:text-cashia-red  hover:outline-2 hover:outline-cashia-red hover:opacity-90 transition"> Get in touch</a>
