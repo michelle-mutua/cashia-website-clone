@@ -175,7 +175,8 @@ export default function CashiaDashboard() {
         </section>
 
         {/* App Utility Promo Ad Banner */}
-        <section className="hidden md:flex w-full bg-auto md:bg-[url('/bg-bottom.png')] border border-cashia-white rounded-[32px] p-10 relative overflow-hidden items-center justify-between gap-6"><div className="z-10 w-full md:w-auto p-4 md:p-5 border border-cashia-white/10 bg-cashia-white/20 backdrop-blur-xl rounded-xl shadow-lg">    
+        <section className="hidden md:flex w-4xl bg-auto md:bg-[url('/bg-bottom.png')] border border-cashia-white rounded-[32px] p-10 relative overflow-hidden items-center justify-between gap-6">
+        <div className="z-10 w-full md:w-auto p-4 md:p-5 border border-cashia-white/10 bg-cashia-white/20 backdrop-blur-xl rounded-xl shadow-lg">    
          <h2 className="text-3xl font-bold text-cashia-black font-akkurat tracking-tight">Get the Cashia App</h2>
             <p className="text-cashia-black text-l mt-1.5 mb-6 font-Akkurat">Instant transfers, lower fees, <br />better experience</p>
             
